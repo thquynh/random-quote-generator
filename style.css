@@ -69,7 +69,7 @@ body {
 }
 
 #new-quote {
-  background-color: #fff; /* Green */
+  background-color: #fff; 
   border: none;
   border-radius: 5px;
   color: var(--primary-color);
@@ -82,8 +82,6 @@ body {
 }
 
 #new-quote:hover {
-  /* background-color: #000; */
   color: black;
   cursor: pointer;
-  /* transition: 0.3 ease-out; */
 }
