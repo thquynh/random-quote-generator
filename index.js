@@ -35,7 +35,7 @@ function generateQuote() {
     const quoteDetails = response[0];
     var quoteText = quoteDetails.text.trim();
     var quoteAuth = "- " + quoteDetails.author.trim() + "-";
-   var content = '"' + quoteText + '" ' + quoteAuth;
+    var content = '"' + quoteText + '" ' + quoteAuth;
     var tweetURL = "https://twitter.com/intent/tweet?text=" + content;
     var tumblrURL =
       "https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,&content=" +
@@ -44,12 +44,13 @@ function generateQuote() {
       encodeURIComponent(quoteAuth.split("-").join("")) +
       "&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button";
 
-
     // Change Primary Color
     changePrimaryColor();
 
     $("#text").text(quoteText);
     $("#author").text(quoteAuth);
     $("#tweet-quote").attr("href", tweetURL);
+    $("#tumblr-quote").attr("href", tumblrURL);
   });
 }
+
