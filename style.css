@@ -60,7 +60,8 @@ body {
   justify-content: space-between;
 }
 
-#tweet-quote i {
+#tweet-quote i,
+#tumblr-quote i {
   color: #fff;
   font-size: 60px;
 }
