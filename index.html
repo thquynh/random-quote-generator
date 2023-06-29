@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/47aecb2b8c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="quote-box">
+      <div id="quote-text" class="width-80">
+        <i class="fa-sharp fa-solid fa-quote-left"></i>
+        <div id="text">
+          <!-- All the world's a stage, and all the men and women merely players. -->
+        </div>
+        <div id="author">William Shakespeare</div>
+        <i class="fa-solid fa-quote-right"></i>
+      </div>
+      <div class="footer width-80">
+        <a
+          href="https://twitter.com/intent/tweet"
+          target="_blank"
+          title="Tweet this quote!"
+          id="tweet-quote"
+          ><i class="fa-brands fa-square-twitter"></i
+        ></a>
+        <button id="new-quote" onclick="generateQuote()">New Quote</button>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
