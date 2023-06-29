@@ -24,7 +24,7 @@ function generateQuote() {
     const quoteDetails = response[0];
     var quoteText = quoteDetails.text.trim();
     var quoteAuth = "- " + quoteDetails.author.trim() + "-";
-    var tweet = '"' + quoteText + '" - ' + quoteAuth;
+    var tweet = '"' + quoteText + '"  ' + quoteAuth;
     var tweetURL = "https://twitter.com/intent/tweet?text=" + tweet;
 
     // Change Primary Color
